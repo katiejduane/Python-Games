@@ -4,6 +4,7 @@
 # 2. Dance
 # 3. Flee
 
+#Run the game while BOTH the hero and the goblin have health > 0
 hero_name = raw_input("What is thy name, brave adventurer?")
 
 def fight():
