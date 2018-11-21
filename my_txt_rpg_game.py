@@ -8,7 +8,7 @@ import os
 print "WELCOME TO REAL LIFE."
 human = raw_input("What's your name? ")
 gameOn = True
-
+# THIS GAME IS A LITTLE BRUTAL! LIGHTEN IT UP FOR THE CLASSES EDITION!
 def play():
     print "Hi, %s, welcome to adulthood. You have some choices to make." % human
     print "               "
@@ -26,13 +26,13 @@ def play():
 
     while gameOn:
         print "You have six choices ahead of you that will determine if you succeed, or if life wins!"
-        sleep(3)
+        sleep(2)
         question = True
         print """
         You've got some money. Would you like to spend it on: a one year fitness studio membership,
         OR an all-inclusive trip (with bottomless drinks!) to the Bahamas? Enter F for fitness or B for Bahamas"
         """
-        sleep(5)
+        sleep(4)
         while question:
             user_choice = raw_input("> ").upper() 
             if user_choice == "F":
@@ -89,7 +89,7 @@ def play():
                 question = False
             elif user_choice == "I":
                 career -= 10
-                adventure += 15
+                adventure += 5
                 growth += 3
                 health +- 3
                 life += 5
@@ -117,6 +117,50 @@ def play():
                 question = False
             else:
                 print "What will it be, buck-a-roo??? "
+                continue
+        human_total = health + love + career + adventure + growth + finance
+        print "You: %d / Life: %d" % (human_total, life)
+
+        question = True
+        print """You suddenly feel unhappy, disatisfied, maybe even a little depressed, but you can't seem to figure out why.
+        You can go to therapy and spend money and time doing the hard, unpleasant work that's required to better
+        understand yourself. Alternatively, you can spend money shopping, go out on a bunch of fun dates, and take a weekend getaway, or maybe redo your bathroom. 
+        DO you choose T for Therapy or A for the alternative? """
+        sleep(5)
+        while question:
+            user_choice = raw_input("> ").upper()
+            if user_choice == "T":
+                growth += 10
+                health += 5
+                love += 5
+                question = False
+            elif user_choice == "A":
+                growth -= 10
+                health -= 10
+                life += 10
+                question = False
+            else:
+                print "So wait, how far will you slide into that blackhole??? "
+                continue
+        human_total = health + love + career + adventure + growth + finance
+        print "You: %d / Life: %d" % (human_total, life)
+
+        question = True
+        print """Let's take a look at your paycheck. You can roll $100.00 more every two weeks into your 401K, or, roll $100.00 every two weeks
+        into your 'I want to go to X country fund. Where do you send the money? F for 401K, X for that exotic trip abroad!"""
+        sleep(5)
+        while question:
+            user_choice = raw_input("> ").upper()
+            if user_choice == "F":
+                finance += 10
+                question = False
+            elif user_choice == "X":
+                finance -= 10
+                adventure += 5
+                life += 10
+                question = False
+            else:
+                print "Where are you gonna go again?F or X? "
                 continue
         human_total = health + love + career + adventure + growth + finance
         print "You: %d / Life: %d" % (human_total, life)

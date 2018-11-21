@@ -4,9 +4,15 @@
 # 2. Dance
 # 3. Flee
 
-# Run the game while BOTH the hero and the goblin have health > 0
+# Ger the os module from python
+import os
+# os.system() will take any linux command and if python can run it, it will
+
+from hero import Hero
 
 hero_name = raw_input("What is thy name, brave adventurer? ")
+
+the_Hero = (hero_name, 10)
 
 def fight():
     print "Welcome %s. Thou art brave!" % hero_name
@@ -42,5 +48,14 @@ def fight():
         else: 
             print "Thou fool, you must enter 1, 2, or 3!"
 
-            
+         # Now it's the goblin's turn!
+        if goblin_health > 0:
+             hero_health -= goblin_power
+             print "The goblin hits you for %d damage!" % goblin_power
+             if hero_health <= 0:
+                 print "Thou hast been slain!"
+                 break
+        raw_input("Hit enter to continue: ")
+        os.system("clear")
+
 fight()
