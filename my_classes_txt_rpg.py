@@ -32,7 +32,7 @@ while gameOn:
     # Question 1: Career/Adventure/Finance
     question = True
     print """
-    You're 22. You've been given a couple of opportunities: to work abroad at an Italian vineyard, 
+    You're in between jobs (for undisclosed reasons) and you've been given a couple of opportunities: to work abroad at an Italian vineyard, 
     or an internship at a company aligned with your long-term professional goals. What'll it be? 
     V for vineyard, or I for internship"""
     print "             "
@@ -324,7 +324,7 @@ jgs`-----` \/     '.___\/
     print Katies_Life.power
     print "    "
     if Katie.total > Katies_Life.power:
-        print "Congratulations! Despite some slip-ups along the way, you didn't let life get you down!"
+        print "Congratulations! You didn't let life get you down. Just make sure you're also having some fun. We're all headed to the same place, after all: the great black abyss!!"
         sleep(2)
         play_again = raw_input("Would you like to play again? Y for yes, N for no: ")
         if play_again == "Y":
@@ -343,7 +343,7 @@ jgs`-----` \/     '.___\/
             print "Thanks for playing!"
             gameOn = False
     else:
-        print "Yikes, life beat you! if you could do it all over again, which decisions might you change?"
+        print "Yikes, life beat you! if you could do it all over again, would you change anything? Or do you like learning the hard way? (I for one, prefer the latter)"
         sleep(2)
         play_again = raw_input("Would you like to play again? Y for yes, N for no: ")
         if play_again == "Y":
