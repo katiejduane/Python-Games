@@ -28,6 +28,8 @@ class Human(object):
         print "Be careful about the choices your make, levels are getting low!"
     def print_congrats(self):
         print "Way to go, doll, you're doin' alright!"
+    def update_total(self):
+        self.total = self.health + self.career + self.adventure + self.love + self.finance + self.growth
 
 
 class Life(object):

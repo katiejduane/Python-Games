@@ -58,6 +58,7 @@ while gameOn:
             print "Hey silly, you get two choices: V or I!"
             continue
         print Katie
+        Katie.update_total()
         print " "
         raw_input("Hit enter to go to the next question: ")
     os.system("clear")
@@ -94,6 +95,7 @@ while gameOn:
             print " "
             continue
         print Katie
+        Katie.update_total()
         print " "
         raw_input("Hit enter to go to the next question: ")
     os.system("clear")
@@ -135,6 +137,7 @@ while gameOn:
             print " "
             continue
         print Katie
+        Katie.update_total()
         print " "
         raw_input("Hit enter to go to the next question: ")
     os.system("clear")
@@ -228,6 +231,7 @@ jgs`-----` \/     '.___\/
             print " "
             continue
         print Katie
+        Katie.update_total()
         print " "
         raw_input("Hit enter to go to the next question: ")
     os.system("clear")
@@ -278,6 +282,7 @@ jgs`-----` \/     '.___\/
             print " "
             continue
         print Katie
+        Katie.update_total()
         print " "
         raw_input("Hit enter to go to the next question: ")
     os.system("clear")
@@ -310,6 +315,7 @@ jgs`-----` \/     '.___\/
             continue
         print Katie
         print " "
+        Katie.update_total()
         raw_input("Hit enter to go to the next question: ")
     os.system("clear")
 
